@@ -5,6 +5,10 @@ app = Flask(__name__)
 m = GPT4All()
 m.open()
 
+@app.route('/')
+def main():
+  return jsonify({'Status': 'Alive'})
+
 @app.route('/prompt')
 def generate_prompt():
     prompt = request.args.get('prompt')
