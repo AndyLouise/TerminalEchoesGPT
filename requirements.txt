@@ -1,2 +1,4 @@
 flask
 nomic
+pytest==6.2.4
+pytest-flask==1.2.0
