@@ -3,7 +3,7 @@ from unittest import mock
 from flask import Flask
 from pytest_flask.plugin import JSONResponse
 
-from myapp import app
+from TerminalEchoesGPT import app
 
 
 def test_main():
