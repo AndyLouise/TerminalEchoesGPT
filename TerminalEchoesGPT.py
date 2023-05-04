@@ -2,8 +2,6 @@ from flask import Flask, jsonify, request
 from nomic.gpt4all import GPT4All
 
 app = Flask(__name__)
-m = GPT4All()
-m.open()
 
 @app.route('/')
 def main():
@@ -19,3 +17,5 @@ def generate_prompt():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
+    m = GPT4All()
+    m.open()
